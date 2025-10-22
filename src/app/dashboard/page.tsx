@@ -44,14 +44,14 @@ export default function DashboardPage() {
                             Retrouvez et suivez vos compétitions créées.
                         </p>
                     </div>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 bg-amber-700">
                         <div className="bg-white/10 px-4 py-2 rounded text-center">
                             <div className="text-sm">5</div>
                             <div className="text-xs text-gray-300">TOTAL TOURNOIS</div>
                         </div>
-                        <div className="bg-white/10 px-4 py-2 rounded text-center">
+                        <div className="bg-amber-50 px-4 py-2 rounded-lg text-center text-black">
                             <div className="text-sm">160</div>
-                            <div className="text-xs text-gray-300">TOTAL PARTICIPANTS</div>
+                            <div className="text-xs text-black">TOTAL PARTICIPANTS</div>
                         </div>
                         <div className="bg-white/10 px-4 py-2 rounded text-center">
                             <div className="text-sm">3/5</div>
