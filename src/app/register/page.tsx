@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { TextField, Button } from '@mui/material';
 import Link from 'next/link';
+import { Home } from '@mui/icons-material';
 
 export default function RegisterPage() {
   const [email, setEmail] = useState('');
@@ -29,7 +30,8 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#1a103d]">
       <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
-        <h1 className="text-3xl font-bold text-red-600 mb-2">NQ25</h1>
+
+        <h1 className="text-3xl font-bold text-red-600 mb-2">NQ25   <Link href="/dashboard" className='text-black right-0'> <Home /></Link></h1>
         <h2 className="text-2xl font-semibold mb-2 text-black">Bienvenu !</h2>
         <p className="text-sm text-gray-600 mb-6">
           Créez votre compte afin de pouvoir conserver vos données et travailler en équipe

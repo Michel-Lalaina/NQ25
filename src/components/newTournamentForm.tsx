@@ -1,10 +1,14 @@
 'use client';
 
+type NewTournamentProps = {
+  onClose: () => void;
+};
+
 import React, { useState } from 'react';
 import { TextField, Button, IconButton } from '@mui/material';
 import { Add, CalendarToday, LocationOn, Image } from '@mui/icons-material';
 
-export default function NewTournamentForm() {
+export default function NewTournament({ onClose }: NewTournamentProps) {
   const [title, setTitle] = useState('');
   const [date, setDate] = useState('');
   const [location, setLocation] = useState('');
@@ -23,7 +27,7 @@ export default function NewTournamentForm() {
   };
 
   return (
-    <div className="min-h-screen bg-[#4c5a6b] flex items-center justify-center p-10">
+    <div className=" bg-[#4c5a6b] flex items-center justify-center p-10">
       <div className="bg-[#696c75] p-8 rounded-xl shadow-lg w-full max-w-3xl">
         <h2 className="text-3xl font-semibold text-white mb-8">Nouveau Tournoi</h2>
 
@@ -105,6 +109,10 @@ export default function NewTournamentForm() {
             CRÉER TOURNOI
           </Button>
         </div>
+        <Button variant="contained" color="error" onClick={onClose}>
+          Annuler
+        </Button>
+
       </div>
     </div>
   );

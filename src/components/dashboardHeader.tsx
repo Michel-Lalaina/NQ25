@@ -27,7 +27,7 @@ export default function DashboardHeader() {
                 <div className="flex items-center gap-2">
                     <Avatar sx={{ width: 36, height: 36 }}>JD</Avatar>
                     <div className="text-sm">
-                        <div>John Doe</div>
+                        <div>Michel Doe</div>
                         <div className="text-xs text-gray-400">Déconnexion</div>
                     </div>
                 </div>
